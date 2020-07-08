@@ -1,0 +1,15 @@
+heat_template_version: "2015-10-15"
+description: "version 2017-09-01 created by HOT Generator at Wed, 08 Jul 2020 06:42:09 GMT."
+resources: 
+  Server_1: 
+    type: "OS::Nova::Server"
+    properties: 
+      security_groups: 
+        - "edc0711f-f9a6-4a10-a522-d80e76dc3203"
+      networks: 
+        - subnet: "f9f74a23-257f-43b5-a9ea-413453812aa3"
+      name: Gold_vm1
+      flavor: "m1.tiny"
+      image: "ae93a34b-9787-4ec7-95cd-2c855d2dc1ef"
+      availability_zone: nova
+      key_name: gold_key
